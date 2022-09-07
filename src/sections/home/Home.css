@@ -110,3 +110,43 @@
     margin-right: 40px;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .art {
+    height: 280px;
+  }
+
+  .title {
+    font-size: calc(1rem * 78 / 16);
+    margin-top: 15px;
+  }
+
+  .subtitle {
+    font-size: calc(1rem * 36 / 16);
+    margin-top: 10px;
+  }
+
+  .texts {
+    margin-top: 30px;
+  }
+
+  .text {
+    font-size: calc(1rem * 27 / 16);
+    max-width: 60ch;
+  }
+
+  .social-links {
+    margin: auto 0 60px;
+  }
+
+  .social-link {
+    width: 75px;
+    height: 75px;
+    margin-right: 100px;
+  }
+
+  .social-link svg {
+    width: 35px;
+    height: 35px;
+  }
+}
