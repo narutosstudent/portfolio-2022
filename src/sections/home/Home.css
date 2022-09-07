@@ -68,7 +68,7 @@
     var(--colors-red),
     var(--colors-yellow)
   );
-  box-shadow: 0 0 2px #ff7e42;
+  box-shadow: 0 0 5px #ff7e42;
   width: 40px;
   height: 40px;
   border-radius: 100%;
@@ -143,10 +143,59 @@
     width: 75px;
     height: 75px;
     margin-right: 100px;
+    transition: all 250ms ease-out;
   }
 
   .social-link svg {
     width: 35px;
     height: 35px;
+    transition: all 200ms 50ms ease-out;
+  }
+
+  .social-link:hover {
+    transform: scale(1.05);
+  }
+
+  .social-link:hover svg {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .social-links {
+    margin: auto 0 100px;
+  }
+
+  .art {
+    height: 450px;
+  }
+
+  .title {
+    font-size: calc(1rem * 96 / 16);
+  }
+
+  .subtitle {
+    font-size: calc(1rem * 50 / 16);
+  }
+
+  .texts {
+    margin-top: 40px;
+  }
+
+  .text {
+    font-size: calc(1rem * 34 / 16);
+    margin-top: 40px;
+    max-width: 75ch;
+  }
+
+  .social-link {
+    width: 85px;
+    height: 85px;
+    margin-right: 140px;
+  }
+
+  .social-link svg {
+    width: 40px;
+    height: 40px;
   }
 }
